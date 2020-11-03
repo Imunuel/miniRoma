@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for user in users %}
+    <div class="da">
+        {{ user.email }}
+        <br>
+        {{ user.first_name }}
+        {{ user.last_name}}
+    </div>
+    {% endfor %}
+
+
+
+
+
+    <style>
+        .da{
+            border: 1px solid black;
+            margin: 5px;
+            width: 200px;
+        }
+    </style>
+</body>
+</html>
